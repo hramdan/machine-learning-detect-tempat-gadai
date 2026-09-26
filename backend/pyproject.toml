@@ -1,0 +1,20 @@
+[tool.pyrefly]
+search-path = [
+    "src",
+    ".",
+    "C:/Users/LENOVO L13 YOGA/AppData/Local/Python/pythoncore-3.14-64/Lib/site-packages"
+]
+site-package-path = [
+    "C:/Users/LENOVO L13 YOGA/AppData/Local/Python/pythoncore-3.14-64/Lib/site-packages"
+]
+replace-imports-with-any = [
+    "fastapi",
+    "fastapi.*",
+    "uvicorn",
+    "uvicorn.*",
+    "dotenv",
+    "dotenv.*"
+]
+
+[tool.pyrefly.errors]
+missing-import = false

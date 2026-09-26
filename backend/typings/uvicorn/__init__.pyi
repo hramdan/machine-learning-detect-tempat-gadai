@@ -1,0 +1,3 @@
+from typing import Any
+
+def run(app: Any, *args: Any, **kwargs: Any) -> None: ...
