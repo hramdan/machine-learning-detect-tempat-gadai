@@ -127,9 +127,9 @@
 			L.control.zoom({ position: 'bottomright' }).addTo(map);
 
 			// Dark Basemap
-			darkTileLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-				attribution: '&copy; <a href="https://carto.com/">CARTO</a> | Jabodetabek Mass Spatial AI',
-				subdomains: 'abcd',
+darkTileLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+className: 'dark-map-tile',
 				maxZoom: 19
 			});
 
@@ -818,6 +818,10 @@
 </div>
 
 <style>
+:global(.dark-map-tile) {
+filter: grayscale(1) invert(1) brightness(0.8) contrast(0.9);
+}
+
 	/* Layout Core */
 	.app-layout {
 		display: flex;

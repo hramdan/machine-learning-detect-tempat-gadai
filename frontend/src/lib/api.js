@@ -2,9 +2,7 @@
  * Pegadaian Spatial API Client Service
  */
 
-const API_BASE_URL = typeof window !== 'undefined' && window.location.hostname === 'localhost'
-	? 'http://localhost:8000'
-	: (import.meta.env.VITE_API_URL || 'http://localhost:8000');
+const API_BASE_URL = import.meta.env.VITE_API_URL || '';
 
 /**
  * Fetch all pawnshop records across Jabodetabek, optionally filtered by region (wilayah) and/or category (kategori).

@@ -1,0 +1,11 @@
+node_modules/
+.svelte-kit/
+build/
+dist/
+__pycache__/
+*.py[cod]
+.pythonlibs/
+.env
+*.db-journal
+*.db-wal
+*.db-shm
